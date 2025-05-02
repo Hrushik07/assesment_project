@@ -66,7 +66,7 @@ const Login = () => {
               <Button
                 type="button"
                 className="otp-button"
-                sx={{ mt: 5, color: "white", width: "200px", ml: 8 }}
+                sx={{ mt: 5, color: "white", width: "60%"}}
                 onClick={() => {
                   formik.validateForm().then((errors) => {
                     if (Object.keys(errors).length > 0) {

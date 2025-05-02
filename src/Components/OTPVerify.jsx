@@ -12,10 +12,10 @@ const OTPVerify = () => {
   const [showResend, setShowResend] = useState(false);
   const [generatedOtp, setGeneratedOtp] = useState(passedOtp);
 
-  const timerRef = useRef(null); // to store the timer reference
+  const timerRef = useRef(null); 
 
   const startTimer = () => {
-    clearInterval(timerRef.current); // clear existing timer
+    clearInterval(timerRef.current);
     setTimeLeft(30);
     setShowResend(false);
 
@@ -32,9 +32,9 @@ const OTPVerify = () => {
   };
 
   useEffect(() => {
-    startTimer(); // start timer on mount
+    startTimer(); 
 
-    return () => clearInterval(timerRef.current); // clean up on unmount
+    return () => clearInterval(timerRef.current); 
   }, []);
 
   const handleVerify = () => {
