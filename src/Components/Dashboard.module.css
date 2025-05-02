@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.dashboardContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #00aaff, #00ff99, #6a11cb);
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  z-index: 10;
+}
+
+.icon {
+  font-size: 24px;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+.dashboardHeader {
+  margin-left: 60px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  backdrop-filter: blur(5px);
+}
+
+.logoutButton {
+  background: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.logoutButton:hover {
+  background: #ff1a1a;
+}
+
+.dashboardContent {
+  margin-left: 60px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  flex-grow: 1;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 20px;
+  color: white;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.large {
+  grid-column: span 2;
+}
+
+.dashboardFooter {
+  margin-left: 60px;
+  padding: 20px 20px 40px;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  background: linear-gradient(135deg, #00aaff, #00ff99, #7e16ee);
+}
+
+.otp-button {
+  background: linear-gradient(to top, #074c46,#176836, #239d52);
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  font-weight: bold;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-top: 20px;
+  width: 200px; 
+}
